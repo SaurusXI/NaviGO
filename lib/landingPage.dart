@@ -5,8 +5,11 @@ import 'package:camera/camera.dart';
 class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return Container(
             
+=======
+
     );
   }
 }

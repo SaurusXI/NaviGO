@@ -3,18 +3,8 @@
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      initialRoute: '/first',
-      
-      theme: ThemeData( 
-        // accentColor: Color(0xFF7FCD91),
-        // backgroundColor: Color(0xFF4D4646),
-        buttonColor: Color(0xFF7FCD91),
-        //fill in the primary and secondary swatch values
-      ),
-      title: "NaviGO",
-      debugShowCheckedModeBanner: false,   
-      home: Scaffold(
+    return Scaffold(
+
         backgroundColor: Color(0xFF4D4646),
         body: Center(
           child: Column(
@@ -22,7 +12,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                "NaviGO",
+                "NAVIGO",
                 style: TextStyle(
                   fontSize: 60.0,
                   fontFamily: "Righteous",           
@@ -33,7 +23,7 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 18.0,
                   fontFamily: "Righteous",
-                  
+                  //more styles for the button
                 ),
               ),
               SizedBox(
@@ -41,6 +31,7 @@ class HomePage extends StatelessWidget {
               ),
               RaisedButton(
                 onPressed: (){
+                  Navigator.pushNamed(context, "/LandingPage");
                   //open Landing Page
                 },
                 child: Text(
@@ -55,7 +46,7 @@ class HomePage extends StatelessWidget {
               ),
               RaisedButton(
                 onPressed: (){
-
+                  //do nothing
                 },
                 child: Text(
                   "CLIENT",
@@ -67,7 +58,6 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }
