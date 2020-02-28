@@ -11,6 +11,7 @@ class NaviGO extends StatelessWidget {
       initialRoute: '/HomePage',
       routes: {
         '/LandingPage': (context) => LandingPage(),
+        '/HomePage': (context) => HomePage(),
       },
       theme: ThemeData( 
         // accentColor: Color(0xFF7FCD91),
